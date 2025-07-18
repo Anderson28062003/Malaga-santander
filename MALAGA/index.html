@@ -146,12 +146,16 @@
       color: #5a6c7d;
       line-height: 1.6;
       font-size: 0.95rem;
+      margin-bottom: 1.5rem;
     }
 
     .card-footer {
       background: linear-gradient(45deg, #e3f2fd, #f1f8e9);
       border-top: 1px solid rgba(0,0,0,0.1);
       padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .card-footer small {
@@ -168,6 +172,32 @@
       font-family: 'Font Awesome 6 Free';
       font-weight: 900;
       color: #20c997;
+    }
+
+    .info-btn {
+      background: linear-gradient(45deg, #0d6efd, #20c997);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .info-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(13, 110, 253, 0.4);
+      color: white;
+      text-decoration: none;
+    }
+
+    .info-btn i {
+      font-size: 0.9rem;
     }
 
     .row {
@@ -302,6 +332,11 @@
       .footer-author {
         font-size: 1.1rem;
       }
+
+      .card-footer {
+        flex-direction: column;
+        gap: 1rem;
+      }
     }
 
     /* Scroll reveal animation */
@@ -336,9 +371,15 @@
           <img src="img/2.jpg" class="card-img-top" alt="Lugar 1">
           <div class="card-body">
             <h5 class="card-title">Asilo san antonio</h5>
-            <p class="card-text">Hogar San Antonio, un centro para ancianos, que requiere apoyo para su funcionamiento. Este hogar, ubicado en la provincia de García Rovira, necesita recursos para cubrir necesidades como reparación de instalaciones, alimentos, servicios básicos y personal de apoyo, especialmente considerando la cantidad de ancianos que atiende. Además, Málaga es la capital de la provincia de García Rovira y un importante centro comercial, financiero y estudiantil. </p>
+            <p class="card-text">Hogar San Antonio, un centro para ancianos, que requiere apoyo para su funcionamiento. Este hogar, ubicado en la provincia de García Rovira, necesita recursos para cubrir necesidades como reparación de instalaciones, alimentos, servicios básicos y personal de apoyo, especialmente considerando la cantidad de ancianos que atiende. Además, Málaga es la capital de la provincia de García Rovira y un importante centro comercial, financiero y estudiantil.</p>
           </div>
-          <div class="card-footer"><small class="text-primary">Zona religiosa</small></div>
+          <div class="card-footer">
+            <small class="text-primary">Zona religiosa</small>
+            <a href="Asilosanantonio.html" target="_blank" class="info-btn">
+              <i class="fas fa-external-link-alt"></i>
+              Más info
+            </a>
+          </div>
         </div>
       </div>
 
@@ -349,7 +390,13 @@
             <h5 class="card-title">Emblema malagueño</h5>
             <p class="card-text">Emblema oficial del municipio, representa los valores de trabajo, fe, honor y valor, además de su identidad cultural y patrimonial.</p>
           </div>
-          <div class="card-footer"><small class="text-primary">Insignia</small></div>
+          <div class="card-footer">
+            <small class="text-primary">Insignia</small>
+            <a href="Emblema.html" target="_blank" class="info-btn">
+              <i class="fas fa-external-link-alt"></i>
+              Más info
+            </a>
+          </div>
         </div>
       </div>
 
@@ -360,7 +407,13 @@
             <h5 class="card-title">Hospital regional garcia rovira</h5>
             <p class="card-text">Centro de atención médica principal de la provincia, encargado de brindar servicios de salud a los habitantes de Málaga y municipios cercanos.</p>
           </div>
-          <div class="card-footer"><small class="text-primary">Centro de atencion</small></div>
+          <div class="card-footer">
+            <small class="text-primary">Centro de atencion</small>
+            <a href="http://www.esegarciarovira-malaga-santander.gov.co/" target="_blank" class="info-btn">
+              <i class="fas fa-external-link-alt"></i>
+              Más info
+            </a>
+          </div>
         </div>
       </div>
 
@@ -371,7 +424,13 @@
             <h5 class="card-title">Caida de muro durante el Carnaval del Oriente colombiano</h5>
             <p class="card-text">En Málaga, Santander, durante el Carnaval del Oriente, un muro colapsó debido a un enredo con cables, hiriendo a varias personas y causando una muerte. El incidente ocurrió durante el desfile de carrozas, específicamente cuando una de ellas se enganchó en un cable de alta tensión, provocando el derrumbe del muro</p>
           </div>
-          <div class="card-footer"><small class="text-primary">Momento historico</small></div>
+          <div class="card-footer">
+            <small class="text-primary">Momento historico</small>
+            <a href="https://www.wradio.com.co/noticias/regionales/santander-30-heridos-y-un-muerto-en-carnaval-del-oriente-en-malaga-por-caida-de-muro/20170108/nota/3350433.aspx#:~:text=Durante%20el%20desfile%20de%20carrozas%20del%20Carnaval,se%20enred%C3%B3%20en%20un%20cable%20de%20alta" ></a> <a href="https://www.youtube.com/watch?v=3L1umuERu5s" target="_blank" class="info-btn"> 
+              <i class="fas fa-external-link-alt"></i>
+              Más info
+            </a>
+          </div>
         </div>
       </div>
 
@@ -380,9 +439,15 @@
           <img src="img/6.png" class="card-img-top" alt="Lugar 5">
           <div class="card-body">
             <h5 class="card-title">Aeropuerto</h5>
-            <p class="card-text"> Pista aérea que conecta a Málaga con otras regiones del país, fundamental para la comunicación y el transporte regional.</p>
+            <p class="card-text">Pista aérea que conecta a Málaga con otras regiones del país, fundamental para la comunicación y el transporte regional.</p>
           </div>
-          <div class="card-footer"><small class="text-primary">Patrimonio</small></div>
+          <div class="card-footer">
+            <small class="text-primary">Patrimonio</small>
+            <a href="https://metar-taf.com/es/airport/SKLA-malaga-regional-airport#:~:text=M%C3%A1laga%20Regional%20Airport%20es%20un,verano%20est%C3%A1%20actualmente%20en%20curso." target="_blank" class="info-btn">+
+              <i class="fas fa-external-link-alt"></i>
+              Más info
+            </a>
+          </div>
         </div>
       </div>
 
@@ -391,9 +456,15 @@
           <img src="img/7.png" class="card-img-top" alt="Lugar 6">
           <div class="card-body">
             <h5 class="card-title">Embalse municipal</h5>
-            <p class="card-text">Infraestructura clave para el abastecimiento de agua en Málaga, diseñada para el almacenamiento y distribución eficiente del recurso hídrico..</p>
+            <p class="card-text">Infraestructura clave para el abastecimiento de agua en Málaga, diseñada para el almacenamiento y distribución eficiente del recurso hídrico.</p>
           </div>
-          <div class="card-footer"><small class="text-primary">Comunitario</small></div>
+          <div class="card-footer">
+            <small class="text-primary">Comunitario</small>
+            <a href="https://www.facebook.com/EPMMalagaS/" target="_blank" class="info-btn">
+              <i class="fas fa-external-link-alt"></i>
+              Más info
+            </a>
+          </div>
         </div>
       </div>
 
@@ -404,7 +475,13 @@
             <h5 class="card-title">Cementerio</h5>
             <p class="card-text">Campo santo tradicional del municipio, actualmente con clausura parcial por medidas de salud pública y adecuaciones sanitarias.</p>
           </div>
-          <div class="card-footer"><small class="text-primary">Zona religiosa</small></div>
+          <div class="card-footer">
+            <small class="text-primary">Zona religiosa</small>
+            <a href="https://www.turismodeobservacion.com/foto/entrada-al-cementerio-malaga-santander-colombia/120811/" target="_blank" class="info-btn">
+              <i class="fas fa-external-link-alt"></i>
+              Más info
+            </a>
+          </div>
         </div>
       </div>
 
@@ -415,7 +492,13 @@
             <h5 class="card-title">Matachines decembrinos</h5>
             <p class="card-text">Una multitud de personas disfrazadas de Papá Noel llena las calles de Málaga con humo de colores y alegría, celebrando una tradicional y festiva actividad comunitaria.</p>
           </div>
-          <div class="card-footer"><small class="text-primary">Tradicion</small></div>
+          <div class="card-footer">
+            <small class="text-primary">Tradicion</small>
+            <a href="https://colectivoclorofila.com/proyectos/matachines/" target="_blank" class="info-btn">
+              <i class="fas fa-external-link-alt"></i>
+              Más info
+            </a>
+          </div>
         </div>
       </div>
 
@@ -426,7 +509,13 @@
             <h5 class="card-title">Notaria 1ª</h5>
             <p class="card-text">La Notaría Primera de Málaga, ubicada en el municipio de Málaga, departamento de Santander, es una entidad que ofrece servicios notariales tanto a personas naturales como jurídicas. Su función principal es dar fe pública y legalizar actos y contratos, además de realizar otros trámites como el registro civil y la autenticación de documentos</p>
           </div>
-          <div class="card-footer"><small class="text-primary">Legal</small></div>
+          <div class="card-footer">
+            <small class="text-primary">Legal</small>
+            <a href="https://notaria1malaga.com.co/" target="_blank" class="info-btn">
+              <i class="fas fa-external-link-alt"></i>
+              Más info
+            </a>
+          </div>
         </div>
       </div>
 
@@ -434,10 +523,16 @@
         <div class="card custom-card h-100 reveal">
           <img src="img/11.png" class="card-img-top" alt="Lugar 10">
           <div class="card-body">
-            <h5 class="card-title">Punto Malaga Santander </h5>
+            <h5 class="card-title">Punto Malaga Santander</h5>
             <p class="card-text">Mapa que muestra la localización exacta del municipio de Málaga en el departamento de Santander, Colombia, destacando su posición estratégica en la región.</p>
           </div>
-          <div class="card-footer"><small class="text-primary">Localizacion</small></div>
+          <div class="card-footer">
+            <small class="text-primary">Localizacion</small>
+            <a href="https://mapcarta.com/es/19696890" target="_blank" class="info-btn">
+              <i class="fas fa-external-link-alt"></i>
+              Más info
+            </a>
+          </div>
         </div>
       </div>
 
@@ -445,10 +540,16 @@
         <div class="card custom-card h-100 reveal">
           <img src="img/12.png" class="card-img-top" alt="Lugar 11">
           <div class="card-body">
-            <h5 class="card-title">Dulce tradicional de Malaga </h5>
+            <h5 class="card-title">Dulce tradicional de Malaga</h5>
             <p class="card-text">Emblemático dulce típico de Málaga, hecho con leche y coco. Las Panuchas son un ícono de la gastronomía local con más de 50 años de historia.</p>
           </div>
-          <div class="card-footer"><small class="text-primary">Dulce tipico</small></div>
+          <div class="card-footer">
+            <small class="text-primary">Dulce tipico</small>
+            <a href="https://rogelmalaga.com/" target="_blank" class="info-btn">
+              <i class="fas fa-external-link-alt"></i>
+              Más info
+            </a>
+          </div>
         </div>
       </div>
 
@@ -457,9 +558,15 @@
           <img src="img/WhatsApp Image 2025-07-17 at 8.23.53 AM.jpeg" class="card-img-top" alt="Lugar 12">
           <div class="card-body">
             <h5 class="card-title">Templo Principal</h5>
-            <p class="card-text"> Majestuosa iglesia de estilo neogótico, ícono arquitectónico y religioso de Málaga, ubicada en el corazón del municipio Hermosa vista de la iglesia principal del municipio, una joya arquitectónica de gran valor histórico y religioso para la comunidad malagueña..</p>
+            <p class="card-text">Majestuosa iglesia de estilo neogótico, ícono arquitectónico y religioso de Málaga, ubicada en el corazón del municipio Hermosa vista de la iglesia principal del municipio, una joya arquitectónica de gran valor histórico y religioso para la comunidad malagueña.</p>
           </div>
-          <div class="card-footer"><small class="text-primary">Cultura religiosa</small></div>
+          <div class="card-footer">
+            <small class="text-primary">Cultura religiosa</small>
+            <a href="https://www.facebook.com/CatedralDeMalagaSantander/?locale=es_LA" target="_blank" class="info-btn">
+              <i class="fas fa-external-link-alt"></i>
+              Más info
+            </a>
+          </div>
         </div>
       </div>
 
